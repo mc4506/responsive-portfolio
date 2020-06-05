@@ -70,9 +70,33 @@ a.active:hover {
   color: brown;
 }
 
+.img-size {
+  width: 400px;
+  height: auto;
+}
+
 /*---------------*/
 /* MEDIA QUERIES */
 /*---------------*/
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  h1 {
+    margin-left: 20px;
+    text-align: left;
+    width: 250px;
+  }
+
+  .nav {
+    justify-content: flex-end;
+    margin-right: 20px;
+    padding-top: 8px;
+  }
+
+  .container-fluid {
+    width: 90%;
+  }
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   h1 {
@@ -86,13 +110,9 @@ a.active:hover {
     margin-right: 40px;
     padding-top: 8px;
   }
-}
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-}
+  .container-fluid {
+    width: 87%;
+  }
 
-/* Extra large devices (large desktops, 1200px and up) */
-/* @media (min-width: 1200px) {
-  ...;
-} */
+}
