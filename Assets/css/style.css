@@ -48,6 +48,11 @@ h2 {
   color: orangered;
 }
 
+h3 {
+  font-size: 20px;
+  color: white;
+}
+
 .nav {
   font-size: 16px;
   justify-content: center;
@@ -73,6 +78,15 @@ a.active:hover {
 .img-size {
   width: 400px;
   height: auto;
+}
+
+
+.caption {
+  display: block;
+  background-color: rgba(255, 69, 0, 0.85);
+  position: relative;
+  bottom: 8%;
+  text-align: center;
 }
 
 /*---------------*/
