@@ -1,0 +1,98 @@
+body {
+  background-color: lightblue;
+}
+
+header {
+  background-color: white;
+  border-bottom: 1px solid gray;
+}
+
+/* ------------------------------------ */
+/* Sticky footer styles from Bootstrap  */
+/* ------------------------------------ */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* margin of footer height */
+  margin-bottom: 30px; 
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* height of footer */
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+ 
+  color: white;
+  background-color: gray;
+}
+/* ------------------------------------ */
+
+h1 {
+  font-size: 32px;
+  padding: 10px;
+  margin-bottom: 0px;
+  text-align: center;
+  color: white;
+  background-color: orangered;
+}
+
+h2 {
+  font-size: 28px;
+  color: orangered;
+}
+
+.nav {
+  font-size: 16px;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+/* Changed button primary color and border color */
+.btn-primary {
+  background-color: darkgray;
+  border-color: gray;
+}
+
+
+/* active link color */
+a.active {
+  color: red;
+}
+
+a.active:hover {
+  color: brown;
+}
+
+/*---------------*/
+/* MEDIA QUERIES */
+/*---------------*/
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  h1 {
+    margin-left: 40px;
+    text-align: left;
+    width: 250px;
+  }
+
+  .nav {
+    justify-content: flex-end;
+    margin-right: 40px;
+    padding-top: 8px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) {
+  ...;
+} */
