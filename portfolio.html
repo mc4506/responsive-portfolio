@@ -15,7 +15,7 @@
 
     <body>
         <header class="row bg-light m-0">
-            <!-- My Navbar with dark background -->
+            <!-- My Navbar -->
             <div class="col col-12 col-sm-5 p-0">
                 <h1>Michael S. Chen</h1>
             </div>
@@ -36,22 +36,24 @@
         </header>
 
         <!-- Portfolio -->
-        <main class="container-fluid w-90 my-5">
+        <main class="container my-5">
             <div class="row">
-                <div class="col col-12 col-lg-9 bg-light">
+                <div class="col col-12 col-lg-8 bg-light">
                     <h2 class="mt-2">Portfolio</h2>
                     <hr class="m-0" />
 
                     <!-- Subrows of portfolio photos -->
                     <div class="row">
                         <div class="col col-12 col-md-6 p-4">
-                            <img src="Assets/Images/verazano.JPG" alt="Verazano" class="img-fluid">
+                            <img src="Assets/Images/verazano.JPG" alt="Verazano" class="img-fluid img-hover"
+                                data-toggle="modal" data-target="#enlarge1" data-whatever="Assets/Images/verazano.JPG">
                             <div class="caption">
                                 <h3>New York City, USA</h3>
                             </div>
                         </div>
                         <div class="col col-12 col-md-6 p-4">
-                            <img src="Assets/Images/byoudouin.JPG" alt="Byoudouin" class="img-fluid">
+                            <img src="Assets/Images/byoudouin.JPG" alt="Byoudouin" class="img-fluid img-hover"
+                                data-toggle="modal" data-target="#enlarge2" data-whatever="Assets/Images/byoudouin.JPG">
                             <div class="caption">
                                 <h3>Kyoto, Japan</h3>
                             </div>
@@ -60,13 +62,15 @@
 
                     <div class="row">
                         <div class="col col-12 col-md-6 p-4">
-                            <img src="Assets/Images/overpeck.jpg" alt="Overpeck Park" class="img-fluid">
+                            <img src="Assets/Images/overpeck.jpg" alt="Overpeck Park" class="img-fluid img-hover"
+                                data-toggle="modal" data-target="#enlarge3" data-whatever="Assets/Images/overpeck.JPG">
                             <div class="caption">
                                 <h3>Bergen County, NJ</h3>
                             </div>
                         </div>
                         <div class="col col-12 col-md-6 p-4">
-                            <img src="Assets/Images/bund.JPG" alt="The Bund" class="img-fluid">
+                            <img src="Assets/Images/bund.JPG" alt="The Bund" class="img-fluid img-hover"
+                                data-toggle="modal" data-target="#enlarge4" data-whatever="Assets/Images/bund.JPG">
                             <div class="caption">
                                 <h3>Shanghai, China</h3>
                             </div>
@@ -75,23 +79,103 @@
 
                     <div class="row">
                         <div class="col col-12 col-md-6 p-4">
-                            <img src="Assets/Images/england.JPG" alt="English Shore" class="img-fluid">
+                            <img src="Assets/Images/england.JPG" alt="English Shore" class="img-fluid img-hover"
+                                data-toggle="modal" data-target="#enlarge5" data-whatever="Assets/Images/england.JPG">
                             <div class="caption">
                                 <h3>English Shore</h3>
                             </div>
                         </div>
                         <div class="col col-12 col-md-6 p-4">
-                            <img src="Assets/Images/centralpark.jpg" alt="Central Park" class="img-fluid">
+                            <img src="Assets/Images/centralpark.jpg" alt="Central Park" class="img-fluid img-hover"
+                                data-toggle="modal" data-target="#enlarge6"
+                                data-whatever="Assets/Images/centralpark.JPG">
                             <div class="caption">
                                 <h3>Central Park</h3>
                             </div>
                         </div>
                     </div>
-
                 </div>
 
-                <!-- Empty div to push content to the left side of viewport on large screens -->
-                <div class="col col-lg-3"></div>
+
+                <!-- Playing with Bootstrap Modal
+                Todo: setup javascript to pass <img src> path to Modal in the future -->
+                <div class="modal fade" id="enlarge1" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="Assets/Images/verazano.JPG" alt="" style="width: 100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="enlarge2" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="Assets/Images/byoudouin.JPG" alt="" style="width: 100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="enlarge3" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="Assets/Images/overpeck.jpg" alt="" style="width: 100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="enlarge4" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="Assets/Images/bund.JPG" alt="" style="width: 100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="enlarge5" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="Assets/Images/england.JPG" alt="" style="width: 100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="enlarge6" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="Assets/Images/centralpark.jpg" alt="" style="width: 100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Add a Google Map -->
+                <!-- Using Bootstrap Display property to display it only on large screens or greater -->
+                <div class="col col-lg-4 d-none d-lg-block">
+                    <h4 class="mt-2">Find it on the map</h4>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12069.19047803362!2d-73.99475595000001!3d40.86534235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1591469277578!5m2!1sen!2sus"
+                        width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
             </div>
         </main>
 
@@ -102,6 +186,11 @@
             </div>
         </footer>
 
+
+        <!-- Playing with Google Maps API from https://developers.google.com/maps/documentation/javascript/adding-a-google-map -->
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+        </script>
+
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
             crossorigin="anonymous"></script>
@@ -111,6 +200,8 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
             integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
             crossorigin="anonymous"></script>
+
+
     </body>
 
 </html>

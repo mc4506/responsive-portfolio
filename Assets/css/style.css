@@ -52,6 +52,11 @@ h3 {
   color: white;
 }
 
+h4 {
+  font-size: 20px;
+  color: orangered;
+}
+
 .nav {
   font-size: 16px;
   justify-content: center;
@@ -79,12 +84,17 @@ a.active:hover {
   height: auto;
 }
 
+/* highlight image when hovered */
+.img-hover:hover {
+  opacity: 0.4;
+}
+
 
 .caption {
   display: block;
   background-color: rgba(255, 69, 0, 0.85);
   position: relative;
-  bottom: 8%;
+  bottom: 24px;
   text-align: center;
 }
 
@@ -105,27 +115,16 @@ a.active:hover {
     padding-top: 8px;
   }
 
-  .container-fluid {
-    width: 90%;
-  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   h1 {
     margin-left: 40px;
-    text-align: left;
-    width: 250px;
   }
 
   .nav {
-    justify-content: flex-end;
     margin-right: 40px;
-    padding-top: 8px;
-  }
-
-  .container-fluid {
-    width: 87%;
   }
 
 }
