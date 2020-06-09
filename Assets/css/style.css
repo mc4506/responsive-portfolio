@@ -63,14 +63,14 @@ h4 {
   vertical-align: middle;
 }
 
-/* Changed button primary color and border color */
+/* Changed Form's button primary color and border color  on Contact page */
 .btn-primary {
   background-color: darkgray;
   border-color: gray;
 }
 
 
-/* active link color */
+/* anchor tag color styles for pseudoclasses */
 a.active {
   color: red;
 }
@@ -89,7 +89,7 @@ a.active:hover {
   opacity: 0.4;
 }
 
-
+/* caption for photos in portfolio page */
 .caption {
   display: block;
   background-color: rgba(255, 69, 0, 0.85);
@@ -97,6 +97,7 @@ a.active:hover {
   bottom: 24px;
   text-align: center;
 }
+
 
 /*---------------*/
 /* MEDIA QUERIES */
