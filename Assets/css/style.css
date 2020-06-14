@@ -105,7 +105,6 @@ a.active:hover {
   h1 {
     margin-left: 20px;
     text-align: left;
-    flex-wrap: nowrap;
     width: 253px;
   }
 
