@@ -21,15 +21,19 @@ body {
 
 .footer {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   width: 100%;
   /* height of footer */
   height: 30px;
-  line-height: 30px;
+  /* line-height: 30px; */
   text-align: center;
 
   color: white;
   background-color: gray;
+}
+
+.footer p {
+  margin: 0px;
 }
 /* ------------------------------------ */
 
